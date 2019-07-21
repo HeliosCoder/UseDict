@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UseDictBotDBModelStoreContainer" CdmEntityContainer="UseDictBotDBEntities1">
+    <EntitySetMapping Name="tbl_UseDict">
+      <EntityTypeMapping TypeName="UseDictBotDBModel.tbl_UseDict">
+        <MappingFragment StoreEntitySet="tbl_UseDict">
+          <ScalarProperty Name="ChatID" ColumnName="ChatID" />
+          <ScalarProperty Name="Source" ColumnName="Source" />
+          <ScalarProperty Name="Target" ColumnName="Target" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

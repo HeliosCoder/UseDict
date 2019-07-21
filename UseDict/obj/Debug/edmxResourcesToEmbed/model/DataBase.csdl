@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UseDictBotDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_UseDict">
+    <Key>
+      <PropertyRef Name="ChatID" />
+    </Key>
+    <Property Name="ChatID" Type="Int64" Nullable="false" />
+    <Property Name="Source" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Target" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="UseDictBotDBEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_UseDict" EntityType="Self.tbl_UseDict" />
+  </EntityContainer>
+</Schema>
